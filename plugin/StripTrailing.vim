@@ -7,5 +7,4 @@ function! <SID>StripTrailingWhitespaces()
     call cursor(l, c)
 endfun
 
-autocmd BufWritePre *.php,*.html,*.js :call <SID>StripTrailingWhitespaces()
-
+autocmd BufWritePre *.phtml,*.php,*.html,*.js :call <SID>StripTrailingWhitespaces()
